@@ -1,0 +1,351 @@
+:root {
+  --hero-button-color: rgba(24, 140, 232, 1);
+  --blue-color: rgba(33, 150, 243, 1);
+  --white-back-color: rgba(245, 244, 250, 1);
+  --white-text-color-60: rgba(255, 255, 255, 0.6);
+  --white-text-color-1: rgba(255, 255, 255, 1);
+  --grey-text-color: rgba(117, 117, 117, 1);
+  --black-text-color: rgba(33, 33, 33, 1);
+  --black-footer-color: rgba(47, 48, 58, 1);
+  --top-logo-subtext: rgba(0, 0, 0, 1);
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Main Logo */
+
+.logo-text {
+  font-family: Raleway, sans-serif;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 31px;
+  letter-spacing: 0.03em;
+  color: var(--blue-color);
+  text-decoration: none;
+}
+
+.top-logo-subtext {
+  color: var(--top-logo-subtext);
+}
+
+.bottom-logo-subtext {
+  color: var(--white-text-color-1);
+}
+
+/* header */
+
+.main-nav-item {
+  color: var(--black-text-color);
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+}
+
+.portfolio-nav-item {
+  color: var(--black-text-color);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+}
+
+li.active > a {
+  color: var(--blue-color);
+}
+
+.header {
+  display: flex;
+  width: 1600px;
+  height: 80px;
+  left: 0px;
+  top: 0px;
+  border: 1px;
+  justify-content: space-around;
+}
+
+.nav,
+.main-nav-items,
+.portfolio-nav-items,
+.header-contacts {
+  display: flex;
+}
+
+.header-contact {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  color: var(--grey-text-color);
+}
+
+/* hover&focus */
+.portfolio-nav-item:hover,
+.portfolio-nav-item:focus,
+.header-contact:hover,
+.header-contact:focus,
+.footer-contacts:hover,
+.footer-contacts:focus,
+.main-nav-item:hover,
+.main-nav-item:focus {
+  color: var(--blue-color);
+}
+
+/* Hero section */
+
+.hero {
+  text-align: center;
+  height: 600px;
+  width: 1600px;
+  top: 80px;
+  background-color: rgba(47, 48, 58, 1);
+}
+
+/* temporary background-color: grey */
+
+.hero-title-div {
+  position: absolute;
+  width: 696px;
+  height: 120px;
+  left: 452px;
+  top: 280px;
+}
+
+.title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 60px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--white-text-color-1);
+}
+
+.hero-button {
+  position: absolute;
+  width: 200px;
+  height: 50px;
+  left: 700px;
+  top: 430px;
+  background-color: var(--hero-button-color);
+  border-radius: 4px;
+}
+
+.hero-button-text {
+  color: var(--white-text-color-1);
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 50px;
+  text-align: center;
+  letter-spacing: 0.06em;
+  width: 136px;
+  height: 30px;
+}
+
+/* опис командних якостей */
+
+.qualities h3 {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--black-text-color);
+}
+
+.qualities p {
+  color: var(--grey-text-color);
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+  letter-spacing: 0.03em;
+}
+
+.qualities-container {
+  position: absolute;
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+  width: 1170px;
+  height: 101px;
+  left: 215px;
+  top: 774px;
+}
+
+.qualities li {
+  width: 270px;
+  height: 101px;
+  display: inline-block;
+}
+
+/* заголовки h2 */
+
+.secondary-title {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--black-text-color);
+}
+
+/* Секція чим ми займаємось */
+
+.about-us-section {
+  position: absolute;
+  width: 1170px;
+  height: 386px;
+  left: 215px;
+  top: 969px;
+  margin: auto;
+}
+
+.about-us-section ul {
+  display: flex;
+  justify-content: center;
+}
+
+/* Секція наша команда */
+
+.team-members {
+  position: absolute;
+  margin: auto;
+  width: 1600px;
+  height: 648px;
+  left: 0px;
+  top: 1449px;
+  background-color: var(--white-back-color);
+}
+
+.team-members ul {
+  display: flex;
+  justify-content: center;
+  padding: 0;
+}
+
+.team-member-name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.03em;
+  color: var(--black-text-color);
+}
+
+.team-member-position {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.03em;
+  color: var(--grey-text-color);
+}
+
+/* Portfolio page */
+
+.portfolio-button {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--black-text-color);
+  background-color: var(--white-back-color);
+}
+
+.portfolio-button:hover,
+.portfolio-button:focus {
+  background-color: var(--blue-color);
+  color: var(--white-text-color-1);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: 0.03em;
+}
+
+.main-portfolio-container {
+  position: absolute;
+  width: 1170px;
+  height: 1360px;
+  left: 215px;
+  top: 174px;
+}
+
+.portfolio-buttons {
+  display: flex;
+  justify-content: center;
+}
+
+.portfolio-buttons li {
+  display: inline;
+}
+
+.portfolio-buttons {
+  margin: 0 auto;
+  padding: 0;
+  width: 611px;
+  height: 54px;
+  left: 495px;
+  top: 174px;
+}
+
+.item-cards li {
+  display: inline-block;
+}
+
+.item-name {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 36px;
+  letter-spacing: 0.06em;
+  color: var(--black-text-color);
+}
+
+.item-description {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 0.03em;
+  color: var(--grey-text-color);
+}
+
+/* Footer */
+
+.footer-main {
+  position: absolute;
+  background-color: var(--black-footer-color);
+  width: 1600px;
+  height: 252px;
+  left: 0px;
+  top: 2097px;
+}
+
+.footer-portfolio {
+  position: absolute;
+  width: 1600px;
+  height: 252px;
+  left: 0px;
+  top: 1628px;
+  background-color: var(--black-footer-color);
+}
+
+.address {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: var(--white-text-color-1);
+}
+
+.footer-contacts {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+  color: var(--white-text-color-60);
+}
