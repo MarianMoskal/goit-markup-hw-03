@@ -327,7 +327,7 @@ li.active > a {
   letter-spacing: 0.03em;
   color: var(--black-text-color);
   background-color: var(--white-back-color);
-  padding: 1px 20px;
+  padding: 6px 22px;
   border: none;
   border-radius: 4px;
 }
@@ -406,12 +406,7 @@ li.active > a {
 
 /* Footer */
 
-.footer-main {
-  background-color: var(--black-footer-color);
-  padding: 60px 0;
-}
-
-.footer-portfolio {
+.footer {
   background-color: var(--black-footer-color);
   padding: 60px 0;
 }
