@@ -11,7 +11,6 @@
 }
 
 :focus {
-  /* border: none; */
   outline: none;
 }
 
@@ -83,17 +82,7 @@ header {
   margin-right: 50px;
 }
 
-.main-nav-item {
-  color: var(--black-text-color);
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  text-decoration: none;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  padding: 22px 0;
-}
-
+.main-nav-item,
 .portfolio-nav-item {
   color: var(--black-text-color);
   text-decoration: none;
@@ -191,7 +180,7 @@ li.active > a {
 .qualities-ul h3 {
   font-weight: 700;
   font-size: 14px;
-  line-height: 1.14;
+  line-height: 1.15;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--black-text-color);
@@ -205,6 +194,7 @@ li.active > a {
   font-weight: 400;
   letter-spacing: 0.03em;
   margin: 0;
+  padding: 3px 0;
 }
 
 .qualities-section {
@@ -214,14 +204,16 @@ li.active > a {
 
 .qualities-ul {
   display: flex;
-  justify-content: space-between;
   padding: 0;
   margin: 0;
 }
 
 .qualities-item {
-  width: 270px;
-  padding: 2.5px 0;
+  max-width: 100%;
+}
+
+.qualities-item:not(:last-child) {
+  margin-right: 30px;
 }
 
 /* заголовки h2 */
@@ -238,19 +230,22 @@ li.active > a {
 
 /* Секція чим ми займаємось */
 
+.about-us-section h2 {
+  margin-bottom: 50px;
+}
+
 .about-us-ul {
   display: flex;
   padding-left: 0;
-  justify-content: space-between;
   margin: 0;
+}
+
+.about-us-ul li:not(:last-child) {
+  margin-right: 30px;
 }
 
 .about-us-ul img {
   display: block;
-}
-
-.about-us-section h2 {
-  margin-bottom: 50px;
 }
 
 .about-us-section {
@@ -271,9 +266,12 @@ li.active > a {
 
 .team-members-ul {
   display: flex;
-  justify-content: space-between;
   padding: 0;
   margin: 0;
+}
+
+.team-members-ul li:not(:last-child) {
+  margin-right: 30px;
 }
 
 .team-members li {
@@ -329,10 +327,7 @@ li.active > a {
   letter-spacing: 0.03em;
   color: var(--black-text-color);
   background-color: var(--white-back-color);
-  padding-bottom: 1;
-  padding-top: 1;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding: 1px 20px;
   border: none;
   border-radius: 4px;
 }
