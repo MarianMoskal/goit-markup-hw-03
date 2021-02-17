@@ -54,7 +54,6 @@ header {
 
 .header {
   display: flex;
-  justify-content: space-between;
   align-items: center;
   width: 1200px;
   margin: auto;
@@ -102,6 +101,9 @@ header {
   color: var(--grey-text-color);
   padding: 22px 0;
 }
+.header-contacts {
+  margin-left: auto;
+}
 
 .main-nav-item,
 .portfolio-nav-item,
@@ -130,7 +132,7 @@ li.active > a {
 .hero {
   text-align: center;
   min-height: 600px;
-  min-width: 1200px;
+  max-width: 1600px;
   background-color: rgba(47, 48, 58, 1);
   margin: 0 auto;
   padding: 200px 0;
@@ -206,10 +208,6 @@ li.active > a {
   display: flex;
   padding: 0;
   margin: 0;
-}
-
-.qualities-item {
-  max-width: 100%;
 }
 
 .qualities-item:not(:last-child) {
